@@ -1,10 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
 def home(request):
     return render(request, 'pages/home.html')
 
-def inventory(request):
-    return render(request, 'pages/inventory.html')
+def list_all_cards(request):
+    return HttpResponse('<h1>Test </h1>')
 
 def stats(request):
     return render(request, 'pages/stats.html')
