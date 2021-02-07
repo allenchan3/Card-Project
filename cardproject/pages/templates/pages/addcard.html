@@ -1,0 +1,26 @@
+{% extends "pages/home.html" %}
+{% block content%}
+
+<a href="{% url 'pages-home' %}">Home Dashboard</a>
+
+<form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname"><br>
+  <label for="fname">Card Company:</label><br>
+  <input type="text" id="cardco" name="cardco"><br>
+  <label for="lname">Year:</label><br>
+  <input type="text" id="cardyear" name="cardyear"><br>
+  <label for="fname">Grading Company:</label><br>
+  <input type="text" id="gradco" name="gradeco"><br>
+  <label for="lname">Grade:</label><br>
+  <input type="text" id="cardgrade" name="cardgrade"><br>
+  <label for="fname">Market Value:</label><br>
+  <input type="text" id="comp" name="comp"><br>
+  <label for="lname">Purchasing Fees:</label><br>
+  <input type="text" id="cost" name="cost">
+</form>
+
+{% endblock content %}
+    

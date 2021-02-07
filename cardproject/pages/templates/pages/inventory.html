@@ -1,6 +1,7 @@
 {% extends "pages/home.html" %}
 {% block content%}
     <a href="{% url 'pages-home' %}">Home Dashboard</a>
+    <a href="{% url 'add_card' %}">Add Card</a>
     {% for card in cards %}
     <table>
     <tr>
