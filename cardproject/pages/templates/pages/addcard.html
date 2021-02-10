@@ -3,7 +3,8 @@
 
 <a href="{% url 'pages-home' %}">Home Dashboard</a>
 
-<form>
+<form action="" method="post">
+    {% csrf_token %%}
   <label for="fname">First name:</label><br>
   <input type="text" id="fname" name="fname"><br>
   <label for="lname">Last name:</label><br>
@@ -20,6 +21,7 @@
   <input type="text" id="comp" name="comp"><br>
   <label for="cost">Purchasing Fees:</label><br>
   <input type="text" id="cost" name="cost">
+  <input type="submit" value="SUBMIT">
 </form>
 
 {% endblock content %}

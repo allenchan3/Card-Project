@@ -1,7 +1,11 @@
 {% extends "pages/home.html" %}
 {% block content%}
     <a href="{% url 'pages-home' %}">Home Dashboard</a>
-    <a href="{% url 'add_card' %}">Add Card</a>
+    
+<form action='/addcard' method='GET'>
+<button type='submit'> Add Card</button>
+</form>
+
     {% for card in cards %}
     <table>
     <tr>
