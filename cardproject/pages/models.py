@@ -15,4 +15,4 @@ class Card(models.Model):
     trend = models.CharField(max_length=5)
     card_photo = models.URLField(max_length=200, null=True, default= None, blank =True)
     date_posted = models.DateTimeField(default=timezone.now)
-    author = models.ForeignKey(User, on_delete=models.CASCADE)
+    author = models.ForeignKey(User, on_delete=models.CASCADE, null=True)
