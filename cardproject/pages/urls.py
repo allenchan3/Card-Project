@@ -7,5 +7,5 @@ urlpatterns = [
     path('addcard/', views.add_card, name='add_card'),
     path('stats/', views.stats, name='pages-stats'),
     path('ebaytracker', views.ebaytracker, name='pages-ebaytracker'),
-    path('sellwax', views.sellwax, name='pages-sellwax'),
+    path('sellwax/', views.sellwax, name='pages-sellwax'),
 ]

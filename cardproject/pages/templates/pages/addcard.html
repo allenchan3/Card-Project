@@ -2,8 +2,8 @@
 {% block content%}
 
 <a href="{% url 'pages-home' %}">Home Dashboard</a>
-
-<form action="" method="post">
+{% comment %} when the action attribute is empty, it goes back to the same page the html is listed on {% endcomment %}
+<form action="" method="post">    
     {% csrf_token %%}
   <label for="first_name">First name:</label><br>
   <input type="text" id="first_name" name="first_name"><br>

@@ -8,18 +8,18 @@ def home(request):
     return render(request, 'pages/home.html')
 
 def list_all_cards(request):
-    all_cards = Card.objects.all()
+    all_cards = Card.objects.all() #it is querying the database for ALL the cards, executing the function all
     
-    context= {
-        "cards":all_cards,
+    context= {                  #dictionary, key(cards) and value(all cards)
+        "cards":all_cards,      #all_cards[0].first_name <<already have the first all_cards values, accessing the attribute of first_name
     }
     return render(request,'pages/inventory.html', context)
 
 def add_card(request):
-    if request.method == 'GET':
+    if request.method == 'GET': # ? how do you invoke this get request? on the web brower, when you go to this URL for the first time, that is a get request.
         context={
         }
-        return render(request, 'pages/addcard.html', context)
+        return render(request, 'pages/addcard.html', context) #rending addcard.html and passing context through to the html template
     
     elif request.method == 'POST':
         last_name = (request.POST.get("last_name"))
@@ -42,4 +42,9 @@ def ebaytracker(request):
     return render(request, 'pages/ebaytracker.html')
 
 def sellwax(request):
-    return render(request, 'pages/sellwax.html')
+    all_cards = Card.objects.all() #it is querying the database for ALL the cards, executing the function all
+    
+    context= {                  #dictionary, key(cards) and value(all cards)
+        "cards":all_cards,      #all_cards[0].first_name <<already have the first all_cards values, accessing the attribute of first_name
+    }
+    return render(request,'pages/sellwax.html', context)
