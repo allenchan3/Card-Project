@@ -31,13 +31,22 @@ def add_card(request):
         graded_score = (request.POST.get("graded_score"))
         market_value = (request.POST.get("market_value"))
         purchase_fees = (request.POST.get("purchase_fees"))
-        new_card_instance = Card( last_name=last_name,first_name=first_name, card_type=card_type, card_year=card_year, grading_type=grading_type, graded_score=graded_score, market_value=market_value, purchase_fees=purchase_fees )
+        sell_price = (request.POST.get("sell_price"))
+        new_card_instance = Card( last_name=last_name,first_name=first_name, card_type=card_type, card_year=card_year, grading_type=grading_type, graded_score=graded_score, market_value=market_value, purchase_fees=purchase_fees, sell_price=sell_price )
         new_card_instance.save()
         return redirect('/')
 
 
 def stats(request):
     return render(request, 'pages/stats.html')
+
+def link(request):
+    all_cards = Card.objects.all()
+     
+    context= {                  
+        "cards":all_cards,
+    }
+    return render(request,'pages/link.html',context)
 
 def ebaytracker(request):
     return render(request, 'pages/ebaytracker.html')
@@ -50,6 +59,3 @@ def sellwax(request):
     }
     return render(request,'pages/sellwax.html', context)
 
-def begin(request):
-    return render(request,'https://cconnect.s3.amazonaws.com/wp-content/uploads/2019/03/1986-87-Fleer-Michael-Jordan-57-RC-Authentic-Rookie-Card-thumb-900.jpg')    
-    

@@ -1,0 +1,13 @@
+<h1> Info about Card, data pullled, add to card, photo</h1>
+<a href="{% url 'pages-home' %}">Home Dashboard</a>
+<a href="{% url 'pages-sellwax' %}">Sell on Wax pack</a>
+
+ 
+ <div class= "inlink">
+                    <img src={{card.card_photo}} width="400" height="400"><br><br><br>
+                    {{ card.card_year }}  {{ card.card_type }}  <br>
+                    {{ card.first_name }} {{ card.last_name}}<br>
+                    {{ card.grading_type }} {{ card.graded_score }}<br>
+                    {{ card.sell_price }}<br>
+                    <button type="button">Add To Cart</button><br>
+                </div>
