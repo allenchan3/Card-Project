@@ -1,7 +1,8 @@
 from django.shortcuts import render, redirect
-from pages.models import *
+from pages.models import*
 from django.http import HttpResponse
 from django.urls import path
+from . forms import*
 
 
 def home(request):
@@ -48,3 +49,7 @@ def sellwax(request):
         "cards":all_cards,      #all_cards[0].first_name <<already have the first all_cards values, accessing the attribute of first_name
     }
     return render(request,'pages/sellwax.html', context)
+
+def begin(request):
+    return render(request,'https://cconnect.s3.amazonaws.com/wp-content/uploads/2019/03/1986-87-Fleer-Michael-Jordan-57-RC-Authentic-Rookie-Card-thumb-900.jpg')    
+    

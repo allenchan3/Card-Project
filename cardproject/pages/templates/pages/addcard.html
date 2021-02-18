@@ -4,7 +4,7 @@
 <a href="{% url 'pages-home' %}">Home Dashboard</a>
 {% comment %} when the action attribute is empty, it goes back to the same page the html is listed on {% endcomment %}
 <form action="" method="post">    
-    {% csrf_token %%}
+    {% csrf_token %}
   <label for="first_name">First name:</label><br>
   <input type="text" id="first_name" name="first_name"><br>
   <label for="last_name">Last name:</label><br>
@@ -21,8 +21,9 @@
   <input type="text" id="market_value" name="market_value"><br>
   <label for="purchase_fees">Purchasing Fees:</label><br>
   <input type="text" id="purchase_fees" name="purchase_fees">
+  <label for="card_photo">URL Link:</label><br>
+  <input type="url" id="card_photo" name="card_photo"><br>
   <input type="submit" value="SUBMIT">
-</form>
-
-{% endblock content %}
-    
+</form><br>
+  
+{% endblock %}

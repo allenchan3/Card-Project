@@ -18,6 +18,7 @@
         <th>Purchase Fees</th>
         <th>Trend</th>
         <th>Date Added</th>
+        <th>Image</th>
         <tr>
     <tr>
         <td>{{ card.first_name }} {{ card.last_name}}</td>
@@ -28,6 +29,7 @@
         <td>{{ card.market_value}} </td>
         <td>{{ card.purchase_fees }} </td>
         <td>{{ card.date_posted}} </td>
+        <td><img src={{card.card_photo}} width="110" height="160"></td>
 
     </tr>
     </table>
