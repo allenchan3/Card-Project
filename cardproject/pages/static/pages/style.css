@@ -1,19 +1,11 @@
-.wrapper{
-    margin: auto;
-    width: 80%;
-    /* border: 3px solid green; */
-    padding: 10px;
+.navbar{
+    background-color: black;
+    font-size: medium;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.temp{
-    display: inline-block;
-    width: 350px;
-    height: 350px;
-    padding: 25px;
-}
-
-.wrapper-header{
-    color:red;
-    height: 400px;
-    padding: 30px;
+.nav{
+    color:white;
+    text-decoration: none;
 }
