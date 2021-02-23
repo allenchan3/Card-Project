@@ -11,6 +11,13 @@
     </head>
 
         <body>
+        <header>
+        <a class="signin" href="#home">Sign In</a>
+        <a href="#createacc">Create An Account</a><br>
+        <a href="#cart">Cart</a>
+        <input type="text" placeholder="Search..">
+        </div>
+        </header>
             <main>
 
                             <div class="navbar" id="navbar">
@@ -32,7 +39,7 @@
                                 {{ card.first_name }} {{ card.last_name}}<br>
                                 {{ card.grading_type }} {{ card.graded_score }}<br>
                                 {{ card.sell_price }}<br>
-                                <button type="button">Add To Cart</button><br>
+                                {% comment %} <button type="button">Add To Cart</button><br> {% endcomment %}
                             </div>
                                  
                             {% endfor %}
