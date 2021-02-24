@@ -3,8 +3,9 @@
     font-size: medium;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
-    
+  
 }
+
 
 .nav{
     color:white;
@@ -14,18 +15,36 @@
 body{
     margin: 0;
     padding: 0;
-    
 }
  
-.temp{
-    display: inline-block;    
-    margin-left: 200px;
-    margin-right: 200px;
+header{
+    text-align: right;
+    background-color: darkblue;
+    font-size: large;
+    padding: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+
+
+
+.signin{
+    color:white;
+    text-decoration: none;
+    display: inline;
+    padding: 1%;
+
 }
 
-header{
-background-color: darkblue;
-font-size: large;
-padding: 35px;
-font-family: Arial, Helvetica, sans-serif;
+a{
+    color:white;
+    text-decoration: none;
+}
+
+.box{
+    display: inline-block;
+    padding: 30px;
+}
+
+.pagination{
+    color:black;
 }

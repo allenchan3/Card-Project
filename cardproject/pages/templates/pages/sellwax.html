@@ -12,13 +12,14 @@
 
         <body>
         <header>
-        <a class="signin" href="#home">Sign In</a>
-        <a href="#createacc">Create An Account</a><br>
-        <a href="#cart">Cart</a>
-        <input type="text" placeholder="Search..">
-        </div>
+            <div class="head">
+                <a class="signin" href="#home">Sign In</a>
+                <a href="#createacc">Create An Account</a><br>
+                <a href="#cart">Cart</a>
+                <input type="text" placeholder="Search..">
+            </div>
         </header>
-            <main>
+           
 
                             <div class="navbar" id="navbar">
                             <a class="nav" href="/">HOME</a>
@@ -28,23 +29,26 @@
                             <a class="nav" href="/">ABOUT US</a>
                             <a class="nav" href="/">CONTACT US</a>
                             </div>
+            <main>               
                            
-                            {% for card in cards %}
-                        
-                            <div class= "temp">
-                                <a href="/link">
-                                    <img src={{card.card_photo}} width="110" height="160"><br>
-                                </a>
-                                {{ card.card_year }}  {{ card.card_type }}  <br>
-                                {{ card.first_name }} {{ card.last_name}}<br>
-                                {{ card.grading_type }} {{ card.graded_score }}<br>
-                                {{ card.sell_price }}<br>
-                                {% comment %} <button type="button">Add To Cart</button><br> {% endcomment %}
-                            </div>
-                                 
-                            {% endfor %}
-                
-                        <ul class="pagination justify-content-center">
+                                    {% for card in cards %}
+
+                                       <div class="box"
+                                        <a href="/link">
+                                            <img src={{card.card_photo}} width="110" height="160"><br>
+                                        </a>
+                                        {{ card.card_year }}  {{ card.card_type }}  <br>
+                                        {{ card.first_name }} {{ card.last_name}}<br>
+                                        {{ card.grading_type }} {{ card.graded_score }}<br>
+                                        {{ card.sell_price }}<br>
+                                        <button type="button">Add To Cart</button><br>
+                                         </div>
+                                    {% endfor %}
+                                   
+               
+            </main>
+
+                        <ul class="pagination">
                             <li class="page-item disabled">
                             <a class="page-link" href="#" tabindex="-1">Previous</a>
                             </li>
@@ -57,7 +61,6 @@
                         </ul>
                     
 
-               
-            </main>
+            
          </body>
     </html>
