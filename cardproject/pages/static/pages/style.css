@@ -3,6 +3,7 @@
     font-size: medium;
     padding: 20px;
     font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
   
 }
 
@@ -12,6 +13,27 @@
     text-decoration: none;
 }
 
+.nav1{
+    padding:3px;
+}
+.nav1{
+    padding:15px;
+}
+.nav2{
+    padding:15px;
+}
+.nav3{
+    padding:15px;
+}
+.nav4{
+    padding:15px;
+}
+.nav5{
+    padding:15px;
+}
+.nav6{
+    padding:15px;
+}
 body{
     margin: 0;
     padding: 0;

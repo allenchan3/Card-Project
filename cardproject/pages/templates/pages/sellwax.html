@@ -15,33 +15,32 @@
             <div class="head">
                 <a class="signin" href="#home">Sign In</a>
                 <a href="#createacc">Create An Account</a><br>
+                <input type="text" placeholder="Search all products..">
                 <a href="#cart">Cart</a>
-                <input type="text" placeholder="Search..">
+
             </div>
         </header>
            
 
                             <div class="navbar" id="navbar">
-                            <a class="nav" href="/">HOME</a>
-                            <a class="nav" href="/">CATALOG</a>
-                            <a class="nav" href="/">EBAY AUCTIONS</a>
-                            <a class="nav" href="/">SELL YOUR CARDS</a>
-                            <a class="nav" href="/">ABOUT US</a>
-                            <a class="nav" href="/">CONTACT US</a>
+                            <a class="nav1" href="/">HOME</a>
+                            <a class="nav2" href="/">CATALOG</a>
+                            <a class="nav3" href="/">EBAY AUCTIONS</a>
+                            <a class="nav4" href="/">SELL YOUR CARDS</a>
+                            <a class="nav5" href="/">ABOUT US</a>
+                            <a class="nav6" href="/">CONTACT US</a>
                             </div>
             <main>               
                            
                                     {% for card in cards %}
-
                                        <div class="box"
-                                        <a href="/link">
-                                            <img src={{card.card_photo}} width="110" height="160"><br>
-                                        </a>
-                                        {{ card.card_year }}  {{ card.card_type }}  <br>
-                                        {{ card.first_name }} {{ card.last_name}}<br>
-                                        {{ card.grading_type }} {{ card.graded_score }}<br>
-                                        {{ card.sell_price }}<br>
-                                        <button type="button">Add To Cart</button><br>
+                                            <a href="/link"><img src={{card.card_photo}} width="110" height="160"><br>
+                                            </a>
+                                            {{ card.card_year }}  {{ card.card_type }}  <br>
+                                            {{ card.first_name }} {{ card.last_name}}<br>
+                                            {{ card.grading_type }} {{ card.graded_score }}<br>
+                                            {{ card.sell_price }}<br>
+                                            <button type="button">Add To Cart</button><br>
                                          </div>
                                     {% endfor %}
                                    
