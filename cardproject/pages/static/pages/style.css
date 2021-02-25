@@ -54,6 +54,7 @@ header{
     text-decoration: none;
     display: inline;
     padding: 1%;
+    
 
 }
 
@@ -65,8 +66,15 @@ a{
 .box{
     display: inline-block;
     padding: 30px;
+    font-family: Helvetica;
+
 }
 
 .pagination{
     color:black;
+}
+
+main{
+    margin-left: 250px;
+    margin-right: 250px;
 }
