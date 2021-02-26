@@ -54,7 +54,6 @@ header{
     text-decoration: none;
     display: inline;
     padding: 1%;
-    
 
 }
 
@@ -75,6 +74,15 @@ a{
 }
 
 main{
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-left: 300px;
+    margin-right: 230px;
+}
+
+.head{
+    margin-right:450px;
+}
+h3{
+    text-align: right;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 450px;
 }
