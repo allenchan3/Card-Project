@@ -87,6 +87,10 @@ h3{
     margin-right: 450px;
 }
 
+.pagination{
+    display:flex;
+    justify-content: center; 
+}
 /* Pagination links */
 .pagination a {
     color: black;
