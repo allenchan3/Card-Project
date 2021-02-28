@@ -84,9 +84,16 @@ main{
 h3{
     text-align: right;
     font-family: Arial, Helvetica, sans-serif;
-    margin-right: 450px;
+    font-size:medium;
+    margin-right: 250px;
 }
 
+h2{
+    font-family: Arial, Helvetica;
+    font-size:medium;
+    margin-left:30px;
+
+}
 .pagination{
     display:flex;
     justify-content: center; 
