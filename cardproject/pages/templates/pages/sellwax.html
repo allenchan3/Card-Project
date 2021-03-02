@@ -35,10 +35,12 @@
                            <h3>Sort by  DROP DOWN MENU  Grid List</h3>
                                     {% for card in cards %}
                                        <div class="box"
-                                            <a href="/link"><img src={{card.card_photo}} width="110" height="160"><br>
-                                            </a>
-                                            {{ card.card_year }}  {{ card.card_type }}  <br>
-                                            {{ card.first_name }} {{ card.last_name}}<br>
+                                               
+                                                <p><a href="/link">
+                                                <img src="{{card.card_photo}}" 
+                                                width="110" height="160">
+                                                </a></p>
+                                            {{ card.card_year }}  {{ card.card_type }}                                              {{ card.first_name }} {{ card.last_name}}<br>
                                             {{ card.grading_type }} {{ card.graded_score }}<br>
                                             {{ card.sell_price }}<br>
                                             <button type="button">Add To Cart</button><br>
