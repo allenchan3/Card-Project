@@ -42,8 +42,8 @@
                                                 </a></p>
                                             {{ card.card_year }}  {{ card.card_type }}                                              {{ card.first_name }} {{ card.last_name}}<br>
                                             {{ card.grading_type }} {{ card.graded_score }}<br>
-                                            {{ card.sell_price }}<br>
-                                            <button type="button">Add To Cart</button><br>
+                                            <b>{{ card.sell_price }}</b><br>
+                                            {% comment %} <button type="button">Add To Cart</button><br> {% endcomment %}
                                          </div>
                                     {% endfor %}
                                    
