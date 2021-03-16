@@ -14,4 +14,5 @@ urlpatterns = [
     path('link/', views.link, name='pages-link'),
     path('ebaytracker', views.ebaytracker, name='pages-ebaytracker'),
     path('sellwax/', views.sellwax, name='pages-sellwax'),
+    path('delete/<int:card_id>', views.delete_card),
 ]

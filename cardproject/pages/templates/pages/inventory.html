@@ -31,7 +31,10 @@
         <td>{{ card.sell_price }} </td>
         <td>{{ card.date_posted}} </td>
         <td><img src={{card.card_photo}} width="110" height="160"></td>
-
+       <td>
+        <a href="/delete/{{card.id}}">
+        <button>DELETE</button>
+        </td>
     </tr>
     </table>
     {% endfor %}

@@ -59,3 +59,9 @@ def sellwax(request):
     }
     return render(request,'pages/sellwax.html', context)
 
+def delete_card(request, card_id):
+    card = Card.objects.get(id=card_id)
+    print("MYNAME IS ALLEN")
+    card.delete()
+    
+    return redirect('/')
